@@ -25,11 +25,11 @@ loom {
         convertAccessWideners = true
         extraAccessWideners.add loom.accessWidenerPath.get().asFile.name
 
-        mixinConfig "examplemod-common.mixins.json"
-        mixinConfig "examplemod.mixins.json"
+        mixinConfig "veritas-common.mixins.json"
+        mixinConfig "veritas.mixins.json"
 
         dataGen {
-            mod "examplemod"
+            mod "veritas"
         }
     }
 }

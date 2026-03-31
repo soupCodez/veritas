@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "veritas",
   "version": "${version}",
   "name": "${mod_name}",
-  "description": "PalladiumCore template mod",
+  "description": "Veritas is a comprehensive Java-based expansion for the Palladium framework, inspired by the grounded, character-driven superhero lore of the Smallville universe.",
   "authors": [
     "${mod_author}"
   ],
@@ -12,16 +12,16 @@
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
   "license": "${mod_license}",
-  "icon": "assets/examplemod/icon.png",
+  "icon": "assets/veritas/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "net.veritas.fabric.VeritasFabric"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json",
-    "examplemod-common.mixins.json"
+    "veritas.mixins.json",
+    "veritas-common.mixins.json"
   ],
   "depends": {
     "fabric": "*",

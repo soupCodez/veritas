@@ -4,30 +4,30 @@ loaderVersion = "[43,)"
 license = "${mod_license}"
 
 [[mods]]
-modId = "examplemod"
+modId = "veritas"
 version = "${version}"
 displayName = "${mod_name}"
 authors = "${mod_author}"
 description = '''
-PalladiumCore template mod
+Veritas is a comprehensive Java-based expansion for the Palladium framework, inspired by the grounded, character-driven superhero lore of the Smallville universe.
 '''
 #logoFile = ""
 
-[[dependencies.examplemod]]
+[[dependencies.veritas]]
 modId = "forge"
 mandatory = true
 versionRange = "[43,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.veritas]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.19.2,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.veritas]]
 modId = "palladium"
 mandatory = true
 versionRange = "[1.20.1-4.2.0,)"
