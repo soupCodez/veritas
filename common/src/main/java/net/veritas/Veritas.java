@@ -1,6 +1,7 @@
 package net.veritas;
 
 import net.veritas.items.VeritasItems;
+import net.veritas.tabs.VeritasTab;
 
 public class Veritas {
 
@@ -8,5 +9,6 @@ public class Veritas {
 
     public static void init() {
         VeritasItems.register();
+        VeritasTab.register();
     }
 }

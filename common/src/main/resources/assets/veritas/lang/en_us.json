@@ -1,0 +1,28 @@
+{
+  "itemGroup.veritas.veritas_tab": "Veritas",
+
+  "item.veritas.octagonal_key": "Octagonal Key",
+  "item.veritas.octagonal_key.tooltip.1": "Ar",
+  "item.veritas.octagonal_key.tooltip.1.shifted": "SM",
+  "item.veritas.octagonal_key.tooltip.2": "iuovqKt",
+  "item.veritas.octagonal_key.tooltip.2.shifted": "BARCODE",
+  "item.veritas.octagonal_key.tooltip.3": "SPR",
+  "item.veritas.octagonal_key.tooltip.3.shifted": "Hope",
+  "tooltip.veritas.hold_shift": "Hold Shift for translation",
+
+  "item.veritas.green_refined_kryptonite": "Refined Green Kryptonite",
+  "item.veritas.red_refined_kryptonite": "Refined Red Kryptonite",
+  "item.veritas.blue_refined_kryptonite": "Refined Blue Kryptonite",
+  "item.veritas.black_refined_kryptonite": "Refined Black Kryptonite",
+  "item.veritas.silver_refined_kryptonite": "Refined Silver Kryptonite",
+  "item.veritas.gold_refined_kryptonite": "Refined Gold Kryptonite",
+  "item.veritas.white_refined_kryptonite": "Refined White Kryptonite",
+  "item.veritas.composite_refined_kryptonite": "Refined Composite Kryptonite",
+
+  "superpower.veritas.traveler.name": "The Traveler",
+  "superpower.veritas.traveler.desc": "A Kal-El of Earth-167, destined to protect or rule.",
+  "superpower.veritas.traveler.stage1": "The Boy from Kansas",
+  "superpower.veritas.traveler.stage2": "The Blur",
+  "superpower.veritas.traveler.stage3": "The Man of Steel",
+  "item.veritas.s_logo": "House of El Crest"
+}

@@ -7,10 +7,12 @@ loom {
 }
 
 dependencies {
-    // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
-    // Do NOT use other classes from fabric loader
-    modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
-    modApi "net.threetag:palladium-common:${rootProject.palladium_version}"
+    // Keep loader only for compile-time annotations in common code.
+    modCompileOnly "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
+    modApi("net.threetag:palladium-common:${rootProject.palladium_version}") {
+        exclude group: "net.fabricmc", module: "fabric-loader"
+        exclude group: "net.fabricmc", module: "sponge-mixin"
+    }
 }
 
 publishing {
