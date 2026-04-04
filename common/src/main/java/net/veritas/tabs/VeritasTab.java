@@ -28,6 +28,7 @@ public class VeritasTab {
                         output.accept(VeritasItems.GOLD_REFINED_KRYPTONITE.get());
                         output.accept(VeritasItems.WHITE_REFINED_KRYPTONITE.get());
                         output.accept(VeritasItems.COMPOSITE_REFINED_KRYPTONITE.get());
+                        output.accept(VeritasItems.KRYPTONIAN_KNOWLEDGE.get());
                     })
                     .build()
     );

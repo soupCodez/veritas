@@ -22,7 +22,14 @@
       "attribute": "minecraft:generic.attack_damage",
       "amount": 10.0,
       "operation": 0,
-      "uuid": "a8f1c2d3-b4e5-4f67-a891-012345678901"
+      "uuid": "a8f1c2d3-b4e5-4f67-a891-012345678901",
+      "conditions": {
+        "unlocking": {
+          "type": "palladium:item_buyable",
+          "ingredient": {"item": "veritas:kryptonian_knowledge"},
+          "amount": 1
+        }
+      }
     },
 
     "resistance": {
@@ -70,7 +77,14 @@
       "attribute": "palladium:flight_speed",
       "amount": 0.4,
       "operation": 0,
-      "uuid": "a5b7c8d9-f0a1-4634-b568-789012345678"
+      "uuid": "a5b7c8d9-f0a1-4634-b568-789012345678",
+      "conditions": {
+        "unlocking": {
+          "type": "palladium:item_buyable",
+          "ingredient": {"item": "veritas:kryptonian_knowledge"},
+          "amount": 1
+        }
+      }
     },
 
     "flight_type": {
