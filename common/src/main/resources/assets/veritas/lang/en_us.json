@@ -24,5 +24,13 @@
   "superpower.veritas.traveler.stage1": "The Boy from Kansas",
   "superpower.veritas.traveler.stage2": "The Blur",
   "superpower.veritas.traveler.stage3": "The Man of Steel",
-  "item.veritas.s_logo": "House of El Crest"
+  "item.veritas.s_logo": "House of El Crest",
+
+  "ability.veritas.super_strength": "Super Strength",
+  "ability.veritas.resistance": "Invulnerability",
+  "ability.veritas.enhanced_jump": "Super Leap",
+  "ability.veritas.flight": "Flight",
+  "ability.veritas.blur": "The Blur",
+
+  "energy_bar.veritas.solar_energy": "Solar Energy"
 }
