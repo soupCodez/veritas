@@ -89,7 +89,7 @@
         "enabling": {
           "type": "palladium:brightness_at_position",
           "min_brightness": 15,
-          "max_brightness": 16
+          "max_brightness": 15
         }
       },
       "energy_bar_usage": {
@@ -123,7 +123,7 @@
         "enabling": {
           "type": "palladium:brightness_at_position",
           "min_brightness": 15,
-          "max_brightness": 16
+          "max_brightness": 15
         }
       }
     },
@@ -193,7 +193,11 @@
       "intensity": 6,
       "conditions": {
         "enabling": {
-          "type": "palladium:on_ground"
+          "type": "palladium:and",
+          "conditions": [
+            {"type": "palladium:on_ground"},
+            {"type": "palladium:not", "condition": {"type": "palladium:is_moving"}}
+          ]
         }
       }
     }
