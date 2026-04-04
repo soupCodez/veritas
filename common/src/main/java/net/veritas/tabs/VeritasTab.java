@@ -17,7 +17,7 @@ public class VeritasTab {
             "veritas_tab",
             () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
                     .title(Component.translatable("itemGroup.veritas.main"))
-                    .icon(() -> new ItemStack(VeritasItems.OCTAGONAL_KEY.get()))
+                    .icon(() -> new ItemStack(VeritasItems.S_LOGO.get()))
                     .displayItems((parameters, output) -> {
                         output.accept(VeritasItems.OCTAGONAL_KEY.get());
                         output.accept(VeritasItems.GREEN_REFINED_KRYPTONITE.get());

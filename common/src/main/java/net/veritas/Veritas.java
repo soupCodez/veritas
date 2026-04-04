@@ -1,5 +1,6 @@
 package net.veritas;
 
+import net.veritas.handlers.PlayerEventHandler;
 import net.veritas.items.VeritasItems;
 import net.veritas.tabs.VeritasTab;
 
@@ -10,5 +11,6 @@ public class Veritas {
     public static void init() {
         VeritasItems.register();
         VeritasTab.register();
+        PlayerEventHandler.register();
     }
 }
