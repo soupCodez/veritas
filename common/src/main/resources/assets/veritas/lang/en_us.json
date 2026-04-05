@@ -18,6 +18,9 @@
   "item.veritas.gold_refined_kryptonite": "Refined Gold Kryptonite",
   "item.veritas.white_refined_kryptonite": "Refined White Kryptonite",
   "item.veritas.composite_refined_kryptonite": "Refined Composite Kryptonite",
+  "block.veritas.green_kryptonite_stone_ore": "Green Kryptonite Ore",
+  "block.veritas.red_kryptonite_stone_ore": "Red Kryptonite Ore",
+  "block.veritas.blue_kryptonite_stone_ore": "Blue Kryptonite Ore",
 
   "superpower.veritas.traveler.name": "The Traveler",
   "superpower.veritas.traveler.desc": "A Kal-El of Earth-167, destined to protect or rule.",

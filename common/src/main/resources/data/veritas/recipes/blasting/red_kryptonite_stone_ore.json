@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "ingredient": {
+    "item": "veritas:red_kryptonite_stone_ore"
+  },
+  "result": "veritas:red_refined_kryptonite",
+  "experience": 0.7,
+  "cookingtime": 100
+}
+

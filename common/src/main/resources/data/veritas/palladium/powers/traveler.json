@@ -3,6 +3,7 @@
   "icon": "veritas:s_logo",
   "primary_color": "#00AAFF",
   "secondary_color": "#005580",
+  "gui_display_type": "tree",
   "abilities": {
     "super_strength": {
       "type": "palladium:attribute_modifier",
