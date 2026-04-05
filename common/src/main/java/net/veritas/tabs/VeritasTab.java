@@ -31,6 +31,7 @@ public class VeritasTab {
                         output.accept(VeritasItems.GREEN_KRYPTONITE_STONE_ORE.get());
                         output.accept(VeritasItems.RED_KRYPTONITE_STONE_ORE.get());
                         output.accept(VeritasItems.BLUE_KRYPTONITE_STONE_ORE.get());
+                        output.accept(VeritasItems.KRYPTONIAN_KNOWLEDGE.get());
                     })
                     .build()
     );

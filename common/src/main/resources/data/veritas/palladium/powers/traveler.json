@@ -1,30 +1,219 @@
 {
   "name": {"translate": "superpower.veritas.traveler.name"},
   "icon": "veritas:s_logo",
-  "primary_color": "#00AAFF",
-  "secondary_color": "#005580",
-  "gui_display_type": "tree",
+  "primary_color": "#FF9900",
+  "secondary_color": "#CC6600",
+
+  "energy_bars": {
+    "solar_energy": {
+      "max": 1000,
+      "auto_increase_per_tick": 1,
+      "auto_increase_interval": 1,
+      "color": [255, 200, 50]
+    }
+  },
+
   "abilities": {
+
     "super_strength": {
       "type": "palladium:attribute_modifier",
+      "title": {"translate": "ability.veritas.super_strength"},
+      "list_index": 0,
       "attribute": "minecraft:generic.attack_damage",
       "amount": 10.0,
       "operation": 0,
-      "uuid": "a8f1c2d3-b4e5-4f67-a891-012345678901"
+      "uuid": "a8f1c2d3-b4e5-4f67-a891-012345678901",
+      "conditions": {
+        "unlocking": {
+          "type": "palladium:item_buyable",
+          "ingredient": {"item": "veritas:kryptonian_knowledge"},
+          "amount": 1
+        }
+      }
     },
+
     "resistance": {
       "type": "palladium:attribute_modifier",
+      "title": {"translate": "ability.veritas.resistance"},
+      "list_index": 1,
       "attribute": "minecraft:generic.armor",
       "amount": 10.0,
       "operation": 0,
       "uuid": "b9d2e3f4-c5f6-4078-b902-123456789012"
     },
-    "speed": {
+
+    "fall_protection": {
       "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "attribute": "palladium:fall_resistance",
+      "amount": 100.0,
+      "operation": 0,
+      "uuid": "d2e4f5a6-c7d8-4301-e235-456789012345"
+    },
+
+    "enhanced_jump": {
+      "type": "palladium:attribute_modifier",
+      "title": {"translate": "ability.veritas.enhanced_jump"},
+      "list_index": 2,
+      "attribute": "palladium:jump_power",
+      "amount": 2.0,
+      "operation": 0,
+      "uuid": "e3f5a6b7-d8e9-4412-f346-567890123456"
+    },
+
+    "enhanced_leap": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "attribute": "palladium:leaping",
+      "amount": 2.0,
+      "operation": 0,
+      "uuid": "f4a6b7c8-e9f0-4523-a457-678901234567"
+    },
+
+    "flight": {
+      "type": "palladium:attribute_modifier",
+      "title": {"translate": "ability.veritas.flight"},
+      "list_index": 3,
+      "attribute": "palladium:flight_speed",
+      "amount": 0.4,
+      "operation": 0,
+      "uuid": "a5b7c8d9-f0a1-4634-b568-789012345678",
+      "conditions": {
+        "unlocking": {
+          "type": "palladium:item_buyable",
+          "ingredient": {"item": "veritas:kryptonian_knowledge"},
+          "amount": 1
+        }
+      }
+    },
+
+    "flight_type": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "attribute": "palladium:heroic_flight_type",
+      "amount": 1.0,
+      "operation": 0,
+      "uuid": "b6c8d9e0-a1b2-4745-c679-890123456789"
+    },
+
+    "solar_charge_peak": {
+      "type": "palladium:dummy",
+      "hidden": true,
+      "conditions": {
+        "enabling": {
+          "type": "palladium:brightness_at_position",
+          "min_brightness": 15,
+          "max_brightness": 15
+        }
+      },
+      "energy_bar_usage": {
+        "energy_bar": "solar_energy",
+        "amount": -5
+      }
+    },
+
+    "solar_charge_day": {
+      "type": "palladium:dummy",
+      "hidden": true,
+      "conditions": {
+        "enabling": {
+          "type": "palladium:day"
+        }
+      },
+      "energy_bar_usage": {
+        "energy_bar": "solar_energy",
+        "amount": -2
+      }
+    },
+
+    "solar_glow_border": {
+      "type": "palladium:gui_overlay",
+      "hidden": true,
+      "texture": "veritas:textures/gui/solar_glow.png",
+      "texture_width": 256,
+      "texture_height": 256,
+      "alignment": "stretch",
+      "conditions": {
+        "enabling": {
+          "type": "palladium:brightness_at_position",
+          "min_brightness": 15,
+          "max_brightness": 15
+        }
+      }
+    },
+
+    "blur_speed": {
+      "type": "palladium:attribute_modifier",
+      "title": {"translate": "ability.veritas.blur"},
+      "list_index": 4,
       "attribute": "minecraft:generic.movement_speed",
-      "amount": 0.3,
+      "amount": 2.0,
       "operation": 1,
-      "uuid": "c0e3f4a5-d6b7-4189-c013-234567890123"
+      "uuid": "c0e3f4a5-d6b7-4189-c013-234567890123",
+      "conditions": {
+        "enabling": {
+          "type": "palladium:sprinting"
+        }
+      },
+      "energy_bar_usage": {
+        "energy_bar": "solar_energy",
+        "amount": 3
+      }
+    },
+
+    "blur_trail": {
+      "type": "palladium:trail",
+      "hidden": true,
+      "trail": "veritas:blur_trail",
+      "conditions": {
+        "enabling": {
+          "type": "palladium:sprinting"
+        }
+      }
+    },
+
+    "blur_whoosh": {
+      "type": "palladium:play_sound",
+      "hidden": true,
+      "sound": "entity.elytra.flying",
+      "volume": 0.7,
+      "pitch": 1.3,
+      "looping": true,
+      "play_self": true,
+      "conditions": {
+        "enabling": {
+          "type": "palladium:sprinting"
+        }
+      }
+    },
+
+    "blur_step_assist": {
+      "type": "palladium:attribute_modifier",
+      "hidden": true,
+      "attribute": "palladium:jump_power",
+      "amount": 1.0,
+      "operation": 0,
+      "uuid": "c7d9e0f1-b2c3-4856-d780-901234567890",
+      "conditions": {
+        "enabling": {
+          "type": "palladium:sprinting"
+        }
+      }
+    },
+
+    "impact_vibrate": {
+      "type": "palladium:vibrate",
+      "hidden": true,
+      "intensity": 6,
+      "conditions": {
+        "enabling": {
+          "type": "palladium:and",
+          "conditions": [
+            {"type": "palladium:on_ground"},
+            {"type": "palladium:not", "condition": {"type": "palladium:is_moving"}}
+          ]
+        }
+      }
     }
   }
 }

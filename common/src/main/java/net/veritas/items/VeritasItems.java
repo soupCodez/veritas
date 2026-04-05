@@ -43,6 +43,10 @@ public class VeritasItems {
     public static final RegistrySupplier<Item> S_LOGO =
             ITEMS.register("s_logo", () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC).fireResistant()));
 
+    public static final RegistrySupplier<Item> KRYPTONIAN_KNOWLEDGE =
+            ITEMS.register("kryptonian_knowledge", KryptonianKnowledge::new);
+
+
     public static void register() {
         ITEMS.register();
     }
